@@ -37,6 +37,7 @@
           <element id="library" level="project" name="Gradle: org.postgresql:postgresql:42.2.1" />
           <element id="library" level="project" name="Gradle: com.github.ben-manes.caffeine:caffeine:2.6.1" />
           <element id="library" level="project" name="Gradle: javax.xml.bind:jaxb-api:2.3.0" />
+          <element id="library" level="project" name="Gradle: org.projectlombok:lombok:1.16.12" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:5.0.3.RELEASE" />
@@ -67,7 +68,6 @@
           <element id="library" level="project" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:5.0.3.RELEASE" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.16.12/64b2d2e8734b54ddba60a69df68a6dac627366c8/lombok-1.16.12.jar" />
         </element>
       </element>
     </root>
