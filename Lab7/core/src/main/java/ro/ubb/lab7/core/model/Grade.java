@@ -1,21 +1,39 @@
 package ro.ubb.lab7.core.model;
 
 
-import javax.persistence.Entity;
+import lombok.*;
+
+import javax.persistence.*;
 
 @Entity
+//@Table(name = "student_discipline")
+//@IdClass(GradePK.class)
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Getter
+//@Setter
+//@EqualsAndHashCode
 public class Grade extends BaseEntity<Long> {
-    private Long IdStudent;
-    private Long IdProblem;
-    private int number;
 
-    public Grade(){}
-    public  Grade(long id, long IdStudent, long IdProblem, int number)
-    {
+    private long IdStudent;
+    private long IdProblem;
+    private int number;
+//    @Id
+//    @ManyToOne(optional = false, fetch = FetchType.EAGER)
+//    @JoinColumn(name = "idstudent")
+//    private Student student;
+//
+//    @Id
+//    @ManyToOne(optional = false, fetch = FetchType.EAGER)
+//    @JoinColumn(name = "idproblem")
+//    private Problem problem;
+
+
+    public Grade(long id, long IdStudent, long IdProblem, int number) {
         super(id);
-        this.IdStudent=IdStudent;
-        this.IdProblem=IdProblem;
-        this.number=number;
+        this.IdStudent = IdStudent;
+        this.IdProblem = IdProblem;
+        this.number = number;
     }
 
     public Long getIdStudent() {
@@ -26,12 +44,12 @@ public class Grade extends BaseEntity<Long> {
         IdStudent = idStudent;
     }
 
-    public Long getIdProblem(){
+    public Long getIdProblem() {
         return IdProblem;
     }
 
-    public void setIdProblem(long idProblem){
-        idProblem=idProblem;
+    public void setIdProblem(long idProblem) {
+        this.IdProblem = idProblem;
     }
 
     @Override

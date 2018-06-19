@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="jpa@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="jpa">
+      <ObjectId>16463</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>12938</ObjectId>
+    </database>
+    <database id="4" parent="1" name="lab4">
+      <ObjectId>16423</ObjectId>
+    </database>
+    <database id="5" parent="1" name="blood-donation">
+      <ObjectId>16481</ObjectId>
+    </database>
+    <database id="6" parent="1" name="blood_donation_db">
+      <ObjectId>16914</ObjectId>
+    </database>
+    <database id="7" parent="1" name="relations">
+      <ObjectId>17207</ObjectId>
+    </database>
+    <database id="8" parent="1" name="catalogngjpa">
+      <ObjectId>17215</ObjectId>
+    </database>
+    <database id="9" parent="1" name="lazy">
+      <ObjectId>17314</ObjectId>
+    </database>
+    <database id="10" parent="1" name="exam">
+      <ObjectId>19068</ObjectId>
+    </database>
+    <database id="11" parent="1" name="bookstore_db">
+      <ObjectId>19069</ObjectId>
+    </database>
+    <role id="12" parent="1" name="dbadmin">
+      <ObjectId>16913</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="13" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="14" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="15" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="16" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="17" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="18" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="19" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-06-18.11:53:46.711</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1183</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="20" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="21" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="22" parent="2" name="pg_temp_1">
+      <ObjectId>11736</ObjectId>
+    </schema>
+    <schema id="23" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11737</ObjectId>
+    </schema>
+    <schema id="24" parent="2" name="information_schema">
+      <ObjectId>12648</ObjectId>
+    </schema>
+    <sequence id="25" parent="19" name="hibernate_sequence">
+      <ObjectId>16479</ObjectId>
+      <StateNumber>641</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="26" parent="19" name="grade">
+      <ObjectId>16464</ObjectId>
+      <StateNumber>638</StateNumber>
+    </table>
+    <table id="27" parent="19" name="person">
+      <ObjectId>19122</ObjectId>
+      <StateNumber>1183</StateNumber>
+    </table>
+    <table id="28" parent="19" name="problem">
+      <ObjectId>16469</ObjectId>
+      <StateNumber>639</StateNumber>
+    </table>
+    <table id="29" parent="19" name="student">
+      <ObjectId>16474</ObjectId>
+      <StateNumber>640</StateNumber>
+    </table>
+    <column id="30" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>638</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="31" parent="26" name="idproblem">
+      <Position>2</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>638</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="32" parent="26" name="idstudent">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>638</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="33" parent="26" name="number">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>638</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="34" parent="26" name="grade_pkey">
+      <ObjectId>16467</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="26" name="grade_pkey">
+      <ObjectId>16468</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>grade_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1183</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="37" parent="27" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1183</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="38" parent="27" name="ssn">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1183</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="39" parent="27" name="person_pkey">
+      <ObjectId>19128</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="40" parent="27" name="person_pkey">
+      <ObjectId>19129</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>person_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="41" parent="28" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>639</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="42" parent="28" name="description">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>639</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="43" parent="28" name="number">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>639</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="44" parent="28" name="problem_pkey">
+      <ObjectId>16472</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="45" parent="28" name="problem_pkey">
+      <ObjectId>16473</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>problem_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>640</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="47" parent="29" name="grade">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>640</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="48" parent="29" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>640</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="49" parent="29" name="student_pkey">
+      <ObjectId>16477</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="50" parent="29" name="student_pkey">
+      <ObjectId>16478</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
